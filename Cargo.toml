@@ -1,0 +1,10 @@
+[package]
+name = "license-gen"
+version = "0.1.0"
+authors = ["Caleb Bassi <calebjbassi@gmail.com>"]
+edition = "2018"
+# include = ["files"]
+
+[dependencies]
+chrono = "0.4.6"
+structopt = "0.2.14"
