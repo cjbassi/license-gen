@@ -24,6 +24,10 @@ fn main() {
         .trim()
         .to_owned()
     });
+    if name == "" {
+        eprintln!("no username configured with git config");
+        process::exit(1);
+    }
     let license_text = match args.license.as_ref() {
         "bsd" | "BSD" => include_str!("../templates/bsd-3.0.txt"),
         "mit" | "MIT" => include_str!("../templates/mit.txt"),
