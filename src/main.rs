@@ -47,5 +47,10 @@ fn main() {
             process::exit(1);
         }
     };
-    print!("{}", license_text.replace("{YEAR}", &year.to_string()).replace("{AUTHOR}", &name));
+    print!(
+        "{}",
+        license_text
+            .replace("{YEAR}", &year.to_string())
+            .replace("{AUTHOR}", &name)
+    );
 }
