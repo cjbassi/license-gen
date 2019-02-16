@@ -12,12 +12,12 @@ Available licenses can be found in the [templates](./templates) folder.
 
 Run the following to download the correct binary for your system from the releases tab into `$CARGO_HOME/bin`: (currently only Linux-x86_64 is available)
 
-```
+```bash
 bash <(curl https://raw.githubusercontent.com/japaric/trust/c268696ab9f054e1092f195dddeead2420c04261/install.sh) -f --git cjbassi/license-gen
 ```
 
 ### From source:
 
-```
+```bash
 cargo install --git https://github.com/cjbassi/license-gen
 ```
